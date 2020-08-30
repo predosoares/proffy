@@ -31,11 +31,11 @@
 
 <!-- Projeto -->
 ## Projeto
+
 #### Objetivo
 O Proffy surgiu com a missão de trazer uma homenagem aos educadores do Brasil, através de uma plataforma que conecta alunos e professores de diversas matérias, permitindo que os alunos encontrem professores e entrem em contato. Todo o desenvolvimento foi feito na semana do dia nacional dos profissionais de educação.
 
 #### Funcionalidades
-Proffy é uma aplicação inteiramente feita com typescript do back-end ao front-end ao app mobile.
 
 ###### Frontend Web
 * Professores podem se cadastrar na plataforma através de um formulário no qual preenchem seus dados.
@@ -53,7 +53,7 @@ Proffy é uma aplicação inteiramente feita com typescript do back-end ao front
 
 <!-- Demo da Aplicação Mobile -->
 ## Demo da Aplicação Mobile
-![Mobile Application](assets/mobileview.gif)
+![Mobile Application](assets/ProffyMobileDemo.gif)
 
 <!-- Tecnologias Aplicadas -->
 ## Tecnologias Aplicadas

@@ -10,13 +10,13 @@ import { Container, ScrollView } from './styles';
 const Favorites: React.FC = () => {
   const [favorites, setFavorites] = useState<ITeacher[]>([]);
 
-  function loadFavorites() {
-    AsyncStorage.getItem('favorites').then(response => {
-      if (response) {
-        const updatedFavorites = JSON.parse(response)
-        setFavorites(updatedFavorites);
-      }
-    });
+  async function loadFavorites() {
+    const response = await AsyncStorage.getItem('favorites');
+
+    if (response) {
+      const updatedFavorites = JSON.parse(response);
+      setFavorites(updatedFavorites);
+    }
   }
 
   useFocusEffect(() => {

@@ -23,6 +23,7 @@ import {
   ButtonIcon,
   ButtonText,
 } from './styles';
+
 import api from '../../services/api';
 
 export interface ITeacher {
@@ -40,7 +41,7 @@ interface TeacherItemsProps {
   favorited: boolean;
 }
 
-const TeacherItem: React.FC<TeacherItemsProps> = ({ teacher, favorited }) => {
+const TeacherItem: React.FC<TeacherItemsProps> = ({ teacher, favorited, ...rest }) => {
   const [isFavorited, setIsFavotired] = useState(favorited);
 
   function handleLinkToWhatsapp(){
@@ -58,6 +59,7 @@ const TeacherItem: React.FC<TeacherItemsProps> = ({ teacher, favorited }) => {
 
     if (favorites){
       favoritesArray = JSON.parse(favorites);
+      console.log(favoritesArray);
     }
 
     if (isFavorited){
@@ -68,7 +70,7 @@ const TeacherItem: React.FC<TeacherItemsProps> = ({ teacher, favorited }) => {
       setIsFavotired(false);
       favoritesArray.splice(favoritedIndex, 1);
     } else {
-      favoritesArray.push(teacher.id);
+      favoritesArray.push(teacher);
 
       setIsFavotired(true);
     }
@@ -77,7 +79,7 @@ const TeacherItem: React.FC<TeacherItemsProps> = ({ teacher, favorited }) => {
   }
 
   return (
-    <Container>
+    <Container {...rest} >
       <Profile>
         <Avatar source={{ uri:teacher.avatar }} />
 
