@@ -32,12 +32,20 @@
 <!-- Projeto -->
 ## Projeto
 #### Objetivo
-Be The Hero é uma aplicação inteiramente feita com javascript do back-end ao front-end e app mobile. O propósito da aplicação é 
-aproximar os heróis de diversas causas de ONGs espalhadas mundo a fora.
+O Proffy surgiu com a missão de trazer uma homenagem aos educadores do Brasil, através de uma plataforma que conecta alunos e professores de diversas matérias, permitindo que os alunos encontrem professores e entrem em contato. Todo o desenvolvimento foi feito na semana do dia nacional dos profissionais de educação.
 
 #### Funcionalidades
-Be The Hero é uma aplicação inteiramente feita com javascript do back-end ao front-end e app mobile. O propósito da aplicação é 
-aproximar os heróis de diversas causas de ONGs espalhadas mundo a fora.
+Proffy é uma aplicação inteiramente feita com typescript do back-end ao front-end ao app mobile.
+
+**Frontend Web**
+* Professores podem se cadastrar na plataforma através de um formulário no qual preenchem seus dados.
+* Alunos podem buscar professores por meio de filtros de busca como matéria, dia da semana e horário.
+* Alunos podem entrar em contato direto com o professor por whatsapp.
+  
+**Frontend Mobile**
+* Alunos podem buscar professores por meio de filtros de busca como matéria, dia da semana e horário.
+* Alunos podem entrar em contato direto com o professor por whatsapp.
+* Alunos podem favoritar professores de sua preferência.
 
 <!-- Demo da Aplicação Web -->
 ## Demo da Aplicação Web
@@ -50,25 +58,20 @@ aproximar os heróis de diversas causas de ONGs espalhadas mundo a fora.
 <!-- Tecnologias Aplicadas -->
 ## Tecnologias Aplicadas
 
-- Node.js
-- SQLite3
-- Knex - ferramenta que ajuda a escrever SQL queries
-- Express - framework node.js para facilitar na criação de rotas e APIs
-- axios - um cliente HTTP, que funciona tanto no browser quanto em node.js
-- nodemon - file watcher
-- Celebrate - Express middlewhere para a biblioteca Joi de validação
-- Joi - biblioteca de validação de dados JS
-- Jest - framewrok de teste
-- supertest - biblioteca para testes HTTP node.js
-- ReactJS
-- React Native ( Expo )
+**Backend**
+O servidor foi construído em **Node.js** utilizando o **SQLite3** para administrar um banco de dados local e o **Knex** como Query Builder oficial. Para gerir as rotas foi utilizado o micro-framework **Express**.
+
+**Frontend Web**
+Para construir o frontend web foi utilizado a biblioteca **ReactJS** e o **axios** como cliente HTTP para consumir os dadosdo servidor.
+
+**Frontend Mobile**
+No projeto do aplicativo utilizei a ferramenta **expo** para criar meu projeto em **React Native**, novamente utilizando o **axios** como cliente HTTP para consumir os dados do servidor.
 
 <!-- Requerimentos -->
 ## Requerimentos
-
 Para conseguir rodar o projeto em sua máquina é necessário ter as seguintes ferramentas instaladas
-- NodeJs
-- NPM
+- Node.js
+- NPM ou Yarn
 - Expo
 
 <!-- Como Executar -->
@@ -76,26 +79,46 @@ Para conseguir rodar o projeto em sua máquina é necessário ter as seguintes f
 
 #### Clonando o projeto
 ```sh
+# Clonando o projeto para a máquina
 git clone https://github.com/Preddo/proffy.git
-cd be-the-hero
+# Vai para a pasta do projeto proffy
+cd proffy
 ```
 #### Iniciando Backend
 ```sh
+# Vai para a pasta server
 cd server
+# Instala as dependências
 yarn
+# Executa o servidor
 yarn start
 ```
-#### Iniciando Frontend
+#### Iniciando Frontend Web
 ```sh
+# Volta para a pasta proffy
+cd ..
+# Vai para a pasta web
 cd web
+# Instala as dependências do frontend web
 yarn
+# Executa o frontend web
 yarn start
 ```
-#### Iniciando mobile
+#### Iniciando Frontend Mobile
 ```sh
+# Volta para a pasta proffy
+cd ..
+# Vai para a pasta mobile
 cd mobile
+# Instala as dependências do frontend mobile
 yarn
-expo start
+# Executa o frontend mobile
+yarn start
 ```
+<!--License session-->
+## 📝 Licença
+
+Este projeto está sob a licença [MIT](./LICENSE).
+
 
 <img alt="Feito com 🧠 por Pedro Soares" src="./assets/Footer.png">
