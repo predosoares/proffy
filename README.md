@@ -37,12 +37,12 @@ O Proffy surgiu com a missão de trazer uma homenagem aos educadores do Brasil, 
 #### Funcionalidades
 Proffy é uma aplicação inteiramente feita com typescript do back-end ao front-end ao app mobile.
 
-**Frontend Web**
+###### Frontend Web
 * Professores podem se cadastrar na plataforma através de um formulário no qual preenchem seus dados.
 * Alunos podem buscar professores por meio de filtros de busca como matéria, dia da semana e horário.
 * Alunos podem entrar em contato direto com o professor por whatsapp.
   
-**Frontend Mobile**
+###### Frontend Mobile
 * Alunos podem buscar professores por meio de filtros de busca como matéria, dia da semana e horário.
 * Alunos podem entrar em contato direto com o professor por whatsapp.
 * Alunos podem favoritar professores de sua preferência.
@@ -58,13 +58,13 @@ Proffy é uma aplicação inteiramente feita com typescript do back-end ao front
 <!-- Tecnologias Aplicadas -->
 ## Tecnologias Aplicadas
 
-**Backend**
+#### Backend
 O servidor foi construído em **Node.js** utilizando o **SQLite3** para administrar um banco de dados local e o **Knex** como Query Builder oficial. Para gerir as rotas foi utilizado o micro-framework **Express**.
 
-**Frontend Web**
+#### Frontend Web
 Para construir o frontend web foi utilizado a biblioteca **ReactJS** e o **axios** como cliente HTTP para consumir os dadosdo servidor.
 
-**Frontend Mobile**
+#### Frontend Mobile
 No projeto do aplicativo utilizei a ferramenta **expo** para criar meu projeto em **React Native**, novamente utilizando o **axios** como cliente HTTP para consumir os dados do servidor.
 
 <!-- Requerimentos -->
